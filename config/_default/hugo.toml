@@ -4,6 +4,7 @@ title = "Группа компаний Латео"
 theme = "congo"
 enableRobotsTXT = true
 summaryLength = 0
+canonifyURLs = true
 
 [pagination]
   pagerSize = 10
