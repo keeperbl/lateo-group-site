@@ -1,0 +1,37 @@
+# Основные настройки темы Congo
+colorScheme = "lateo"
+defaultAppearance = "light"
+autoSwitchAppearance = false
+
+# Мета
+description = "Международная группа компаний — производство молочной продукции и мороженого в России и Беларуси"
+
+# Логотип
+[header]
+  layout = "basic"
+  logo = ""
+  logoDark = ""
+
+# Главная страница
+[homepage]
+  layout = "lateo"
+  showRecent = false
+  showRecentItems = 0
+
+# Статьи
+[article]
+  showDate = true
+  showReadingTime = false
+  showAuthor = false
+  showTableOfContents = false
+  showBreadcrumbs = false
+
+# Подвал
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = false
+  showScrollToTop = true
+
+# SEO
+robots = "index, follow"

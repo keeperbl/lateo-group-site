@@ -1,0 +1,49 @@
+[[main]]
+  name = "О компании"
+  url = "/about/"
+  weight = 10
+
+[[main]]
+  name = "Бренды"
+  url = "/brands/"
+  weight = 20
+
+[[main]]
+  name = "Производство"
+  url = "/production/"
+  weight = 30
+
+[[main]]
+  name = "Карьера"
+  url = "/career/"
+  weight = 40
+
+[[main]]
+  name = "Новости"
+  url = "/news/"
+  weight = 50
+
+[[main]]
+  name = "Контакты"
+  url = "/contacts/"
+  weight = 60
+
+[[footer]]
+  name = "О компании"
+  url = "/about/"
+  weight = 10
+
+[[footer]]
+  name = "Бренды"
+  url = "/brands/"
+  weight = 20
+
+[[footer]]
+  name = "Карьера"
+  url = "/career/"
+  weight = 30
+
+[[footer]]
+  name = "Контакты"
+  url = "/contacts/"
+  weight = 40

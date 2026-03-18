@@ -1,0 +1,11 @@
+languageName = "Русский"
+languageCode = "ru"
+weight = 1
+title = "Группа компаний Латео"
+
+[params]
+  description = "Международная группа компаний — производство молочной продукции и мороженого в России и Беларуси"
+  [params.author]
+    name = "Латео Групп"
+    email = "info@lateo.ru"
+    links = []
