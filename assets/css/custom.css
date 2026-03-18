@@ -29,6 +29,24 @@
 header {
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
+  width: 100%;
+}
+
+header nav,
+footer > * {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  header nav,
+  footer > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Ссылки */
@@ -82,6 +100,7 @@ a:hover {
   align-items: center;
   background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 40%, #40916C 70%, #52B788 100%);
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-section::before {
@@ -93,9 +112,10 @@ a:hover {
 
 .hero-content {
   position: relative;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
   color: white;
 }
@@ -147,15 +167,28 @@ a:hover {
 .stats-section {
   background: var(--color-bg);
   padding: 4rem 2rem;
+  width: 100%;
 }
 
 .stats-grid {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .stat-item {
@@ -186,10 +219,15 @@ a:hover {
 .brands-section {
   padding: 5rem 2rem;
   background: white;
+  width: 100%;
 }
 
 .section-header {
   text-align: center;
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3rem;
 }
 
@@ -208,11 +246,29 @@ a:hover {
 }
 
 .brands-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .brand-card {
@@ -267,14 +323,27 @@ a:hover {
 .values-section {
   padding: 5rem 2rem;
   background: linear-gradient(180deg, #F0FAF5 0%, var(--color-bg) 100%);
+  width: 100%;
 }
 
 .values-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .value-card {
@@ -314,14 +383,27 @@ a:hover {
 .why-section {
   padding: 5rem 2rem;
   background: white;
+  width: 100%;
 }
 
 .why-grid {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .why-card {
@@ -360,6 +442,13 @@ a:hover {
   padding: 5rem 2rem;
   background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
   text-align: center;
+  width: 100%;
+}
+
+.career-cta-section > * {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .career-cta-section h2 {
@@ -384,6 +473,13 @@ a:hover {
   color: white;
   padding: 5rem 2rem 4rem;
   text-align: center;
+  width: 100%;
+}
+
+.page-hero > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-hero h1 {
@@ -401,9 +497,15 @@ a:hover {
 }
 
 .content-section {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 2.5rem 1rem;
+  }
 }
 
 /* Карточки на страницах */
@@ -580,6 +682,20 @@ a:hover {
 .author-info .role {
   font-size: 0.8rem;
   color: var(--color-text-muted);
+}
+
+/* ========================================
+   Убираем ограничения Congo на prose-контент
+   ======================================== */
+.prose {
+  max-width: none !important;
+}
+
+/* Congo article/list wrapper — убираем px */
+article.mx-auto,
+.mx-auto.max-w-prose,
+.max-w-prose {
+  max-width: none !important;
 }
 
 /* ========================================
