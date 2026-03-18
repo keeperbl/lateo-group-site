@@ -611,3 +611,81 @@ a:hover {
     padding: 1.5rem;
   }
 }
+
+/* ========================================
+   Фото галерея производства
+   ======================================== */
+
+.factory-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.factory-photo-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.factory-photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: var(--color-border);
+}
+
+.factory-photo-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.factory-photo-item:hover img {
+  transform: scale(1.03);
+}
+
+.factory-photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.65));
+  color: white;
+  padding: 1.5rem 1rem 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.factory-photo-section {
+  margin: 2.5rem 0;
+}
+
+.factory-photo-section h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.factory-photo-section .factory-location {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.factory-photo-section p {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .factory-photo-grid {
+    grid-template-columns: 1fr;
+  }
+  .factory-photo-item img {
+    height: 220px;
+  }
+}
