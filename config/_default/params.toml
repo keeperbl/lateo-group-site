@@ -9,8 +9,8 @@ description = "Международная группа компаний — пр
 # Логотип
 [header]
   layout = "basic"
-  logo = ""
-  logoDark = ""
+  logo = "img/logo-lateo.png"
+  logoDark = "img/logo-lateo.png"
 
 # Главная страница
 [homepage]
