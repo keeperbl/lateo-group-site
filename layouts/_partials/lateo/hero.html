@@ -1,15 +1,176 @@
 <section class="hero-section" data-aos="fade-in">
-  <div class="hero-content">
-    <span class="hero-tagline">Группа компаний Латео</span>
-    <h1 class="hero-title">
-      <span class="accent">Молоко</span> для людей
-    </h1>
-    <p class="hero-subtitle">
-      Международный холдинг — производство молочной продукции и мороженого в России и Беларуси. Мы создаём качественные продукты и лучшие условия для нашей команды.
-    </p>
-    <div class="hero-buttons">
-      <a href="/career/" class="btn-primary">Вакансии и карьера</a>
-      <a href="/about/" class="btn-outline">О компании</a>
+  <!-- Декоративные круги / кольца фона -->
+  <div class="deco-circle deco-circle--yellow-lg"></div>
+  <div class="deco-circle deco-circle--blue"></div>
+  <div class="deco-circle deco-circle--green"></div>
+  <div class="deco-ring deco-ring--yellow"></div>
+  <div class="deco-ring deco-ring--green"></div>
+  <div class="deco-ring deco-ring--blue-sm"></div>
+  <div class="deco-ring deco-ring--yellow-sm"></div>
+
+  <div class="hero-content hero-content--split">
+
+    <!-- ← Текст -->
+    <div class="hero-text" data-aos="fade-right" data-aos-duration="800">
+      <span class="hero-tagline">Группа компаний Латео</span>
+      <h1 class="hero-title">
+        <span class="accent">Молоко</span><br>для людей
+      </h1>
+      <p class="hero-subtitle">
+        Международный холдинг — производство молочной продукции и мороженого в России и Беларуси. Мы создаём качественные продукты и лучшие условия для нашей команды.
+      </p>
+      <div class="hero-buttons">
+        <a href="/career/" class="btn-primary">Вакансии и карьера</a>
+        <a href="/about/" class="btn-outline">О компании</a>
+      </div>
     </div>
+
+    <!-- → Иллюстрация: корова + декор -->
+    <div class="hero-illustration" data-aos="fade-left" data-aos-duration="1000">
+      <div class="hero-illustration-inner">
+        <!-- Плавающие точки/кольца вокруг коровы -->
+        <div class="float-dot float-dot--yellow"></div>
+        <div class="float-dot float-dot--blue"></div>
+        <div class="float-dot float-dot--green"></div>
+        <div class="float-ring float-ring--yellow"></div>
+        <div class="float-ring float-ring--blue"></div>
+        <div class="float-ring float-ring--green"></div>
+
+        <!-- Мультяшная корова (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380"
+             class="hero-cow-svg" role="img" aria-label="Мультяшная корова — символ Латео">
+
+          <!-- Трава -->
+          <ellipse cx="195" cy="365" rx="172" ry="18" fill="#6BCB77"/>
+          <ellipse cx="85" cy="362" rx="48" ry="12" fill="#5DBE73"/>
+          <ellipse cx="318" cy="362" rx="42" ry="11" fill="#5DBE73"/>
+          <!-- Травинки -->
+          <path d="M50,358 Q48,342 55,330 Q59,342 54,358Z" fill="#4AAD5E"/>
+          <path d="M62,356 Q63,343 69,334 Q71,344 65,356Z" fill="#3AAD5E"/>
+          <path d="M340,358 Q342,340 348,330 Q351,342 345,358Z" fill="#4AAD5E"/>
+          <path d="M358,356 Q360,342 365,334 Q368,344 362,356Z" fill="#3AAD5E"/>
+
+          <!-- ТЕЛО -->
+          <ellipse cx="218" cy="265" rx="128" ry="84" fill="#FFFFFF" stroke="#D8EBD8" stroke-width="2.5"/>
+
+          <!-- Пятна на теле -->
+          <path d="M176,222 Q205,207 230,226 Q235,252 217,262 Q190,266 176,222Z"
+                fill="#2C2C2C" opacity="0.82"/>
+          <path d="M262,275 Q280,262 297,274 Q296,298 278,302 Q258,298 262,275Z"
+                fill="#2C2C2C" opacity="0.82"/>
+          <!-- Маленькое пятно -->
+          <ellipse cx="200" cy="285" rx="14" ry="10" fill="#2C2C2C" opacity="0.55"
+                   transform="rotate(-10 200 285)"/>
+
+          <!-- НОГИ (передние) -->
+          <rect x="134" y="320" width="23" height="52" rx="11" fill="#F5F5F5" stroke="#D0D8D0" stroke-width="1.5"/>
+          <rect x="169" y="320" width="23" height="52" rx="11" fill="#F5F5F5" stroke="#D0D8D0" stroke-width="1.5"/>
+          <!-- НОГИ (задние) -->
+          <rect x="256" y="320" width="23" height="52" rx="11" fill="#F5F5F5" stroke="#D0D8D0" stroke-width="1.5"/>
+          <rect x="290" y="320" width="23" height="52" rx="11" fill="#F5F5F5" stroke="#D0D8D0" stroke-width="1.5"/>
+          <!-- Копыта -->
+          <rect x="134" y="362" width="23" height="11" rx="6" fill="#7A8A7A"/>
+          <rect x="169" y="362" width="23" height="11" rx="6" fill="#7A8A7A"/>
+          <rect x="256" y="362" width="23" height="11" rx="6" fill="#7A8A7A"/>
+          <rect x="290" y="362" width="23" height="11" rx="6" fill="#7A8A7A"/>
+
+          <!-- ВЫМЯ -->
+          <ellipse cx="182" cy="336" rx="32" ry="18" fill="#FFB3BA"/>
+          <circle cx="168" cy="349" r="5.5" fill="#FF8FA3"/>
+          <circle cx="183" cy="352" r="5.5" fill="#FF8FA3"/>
+          <circle cx="198" cy="349" r="5.5" fill="#FF8FA3"/>
+
+          <!-- ХВОСТ -->
+          <path d="M342,228 Q372,216 368,254 Q363,280 346,275"
+                stroke="#AAAAAA" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="346" cy="277" rx="10" ry="15" fill="#AAAAAA"
+                   transform="rotate(20 346 277)"/>
+
+          <!-- ШЕЯ -->
+          <path d="M118,220 Q93,206 76,238 Q72,265 90,276
+                   Q115,281 128,263 Q142,242 118,220Z"
+                fill="#FFFFFF" stroke="#D8EBD8" stroke-width="2"/>
+
+          <!-- ГОЛОВА -->
+          <circle cx="70" cy="196" r="70" fill="#FFFFFF" stroke="#D8EBD8" stroke-width="2.5"/>
+
+          <!-- Пятно на голове -->
+          <path d="M54,155 Q76,143 97,158 Q102,180 88,191
+                   Q64,194 54,155Z" fill="#2C2C2C" opacity="0.78"/>
+
+          <!-- УШИ -->
+          <ellipse cx="12" cy="168" rx="22" ry="15" fill="#FFFFFF" stroke="#D8EBD8"
+                   stroke-width="2" transform="rotate(-40 12 168)"/>
+          <ellipse cx="12" cy="168" rx="14" ry="9" fill="#FFB3BA"
+                   transform="rotate(-40 12 168)"/>
+          <ellipse cx="128" cy="168" rx="22" ry="15" fill="#FFFFFF" stroke="#D8EBD8"
+                   stroke-width="2" transform="rotate(40 128 168)"/>
+          <ellipse cx="128" cy="168" rx="14" ry="9" fill="#FFB3BA"
+                   transform="rotate(40 128 168)"/>
+
+          <!-- РОГА -->
+          <path d="M44,138 Q28,108 42,90" stroke="#D4A054" stroke-width="8"
+                fill="none" stroke-linecap="round"/>
+          <path d="M96,135 Q112,104 100,88" stroke="#D4A054" stroke-width="8"
+                fill="none" stroke-linecap="round"/>
+          <!-- Блик на рогах -->
+          <path d="M47,130 Q35,110 44,94" stroke="#EBC078" stroke-width="3"
+                fill="none" stroke-linecap="round" opacity="0.6"/>
+          <path d="M99,127 Q110,106 102,92" stroke="#EBC078" stroke-width="3"
+                fill="none" stroke-linecap="round" opacity="0.6"/>
+
+          <!-- ГЛАЗА — белки -->
+          <circle cx="44" cy="190" r="16" fill="#FFFFFF" stroke="#D0D8D0" stroke-width="1"/>
+          <circle cx="96" cy="190" r="16" fill="#FFFFFF" stroke="#D0D8D0" stroke-width="1"/>
+          <!-- Радужки -->
+          <circle cx="44" cy="190" r="11" fill="#3A2010"/>
+          <circle cx="96" cy="190" r="11" fill="#3A2010"/>
+          <!-- Блики -->
+          <circle cx="48" cy="185" r="5" fill="white"/>
+          <circle cx="100" cy="185" r="5" fill="white"/>
+          <circle cx="50" cy="186" r="2.5" fill="#3A2010"/>
+          <circle cx="102" cy="186" r="2.5" fill="#3A2010"/>
+          <circle cx="52" cy="183" r="2" fill="white"/>
+          <circle cx="104" cy="183" r="2" fill="white"/>
+
+          <!-- Ресницы -->
+          <line x1="30" y1="178" x2="34" y2="170" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+          <line x1="43" y1="174" x2="43" y2="166" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+          <line x1="56" y1="175" x2="60" y2="168" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+          <line x1="83" y1="175" x2="87" y2="168" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+          <line x1="96" y1="174" x2="96" y2="166" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+          <line x1="109" y1="178" x2="114" y2="171" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+
+          <!-- МОРДОЧКА -->
+          <ellipse cx="70" cy="222" rx="34" ry="24" fill="#FFB3BA"/>
+          <!-- Ноздри -->
+          <ellipse cx="59" cy="222" rx="9" ry="8" fill="#FF8FA3"/>
+          <ellipse cx="81" cy="222" rx="9" ry="8" fill="#FF8FA3"/>
+          <!-- Улыбка -->
+          <path d="M54,238 Q70,252 86,238" stroke="#CC5577" stroke-width="3"
+                fill="none" stroke-linecap="round"/>
+
+          <!-- КОЛОКОЛЬЧИК -->
+          <rect x="58" y="256" width="22" height="26" rx="6" fill="#FFD93D" stroke="#C4A000" stroke-width="2"/>
+          <path d="M58,262 Q69,254 80,262" fill="none" stroke="#C4A000" stroke-width="1.5"/>
+          <circle cx="69" cy="282" r="5" fill="#C4A000"/>
+
+          <!-- Молочные капли (декор) -->
+          <path d="M316,68 Q320,55 324,68 Q324,79 320,79 Q316,79 316,68Z"
+                fill="white" opacity="0.75"/>
+          <path d="M344,36 Q349,22 354,36 Q354,48 349,48 Q344,48 344,36Z"
+                fill="white" opacity="0.55"/>
+          <path d="M296,100 Q300,89 304,100 Q304,109 300,109 Q296,109 296,100Z"
+                fill="white" opacity="0.65"/>
+
+          <!-- Жёлтые звёздочки / точки (как акцент) -->
+          <circle cx="358" cy="100" r="5" fill="#FFD93D" opacity="0.7"/>
+          <circle cx="340" cy="130" r="3.5" fill="#FFD93D" opacity="0.6"/>
+          <circle cx="10" cy="230" r="4" fill="#4A90D9" opacity="0.5"/>
+          <circle cx="20" cy="255" r="2.5" fill="#4A90D9" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
   </div>
 </section>
